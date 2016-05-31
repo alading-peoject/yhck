@@ -135,7 +135,7 @@ setFontSize(size){
   }
 }
 
-$header-height = $rem(70px)
+$header-height = $rem(88px)
 .margin-left-right-default{
   padding 0 $rem(28px)
 }
@@ -214,17 +214,17 @@ radioInput(){
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    width: $rem(20px);
-    height: $rem(20px);
-    display: inline-block;
+    width $rem(20px);
+    height $rem(20px);
+    display inline-block;
     margin-right: 0.5rem;
-    outline: none;
-    background: #fff;
-    border: $rem(1px) solid #eee;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    top :0 
+    outline none;
+    background #fff;
+    border $rem(2px) solid #e8e8e8;
+    color #fff;
+    cursor pointer;
+    position relative;
+    top 0 
     z-index: 1000;
   }
   .option-input.radio {
@@ -234,18 +234,17 @@ radioInput(){
     border-radius: 50%;
   }
   .option-input:checked::before {
-    // width $rem(10px);
-    // height $rem(10px);
-    // border-radius: 50%;
-    // border $rem(1px) solid $grey-color
-    // background $dark-yellow-color
-    // position: absolute;
-    // left 50%
-    // top 50%
-    // margin-left: 0.1%;
-    // margin-top: -0.37rem;
-    // display: inline-block;
-    // content: '';
+    width $rem(10px)
+    height $rem(10px)
+    border-radius $rem(5px)
+    background $dark-yellow-color
+    position: absolute
+    left 50%
+    top 50%
+    margin-left $rem(-5px)
+    margin-top $rem(-5px)
+    display: inline-block;
+    content: '';
   }
 }
 lafe-intro-item(isHaveSelect=100%){
@@ -317,7 +316,7 @@ lafe-intro-item(isHaveSelect=100%){
 addFooter(){
   .footer{
     width 100%
-    height $rem(70px)
+    height $rem(88px)
     display flex
     position absolute
     left 0
@@ -400,6 +399,7 @@ addBottomNavigator(){
     display flex
     border-top $rem(1px) solid $grey-background-color
     height $rem(74)
+    width 100%
     li{
       flex 1
       text-align center
@@ -416,13 +416,11 @@ addBottomNavigator(){
       }
       em{
         flex 2
-        height $rem(50px)
         color #f4ac3a
         setFontSize($font-size-30)
         align-items flex-end
       }
       strong{
-        height $rem(24px)
         flex 1
         color #6b6b6b
         font-weight normal
@@ -515,6 +513,14 @@ addBottomNavigator(){
     @extend .margin-left-right-default
   }
   addFooter()
+  .footer{
+    display flex
+    width 100%
+    addBottomNavigator()
+  }
+  .navigator{
+    width 100%
+  }
   .item:last-child{
     margin-bottom $rem(120px)
   }
@@ -527,7 +533,7 @@ addBottomNavigator(){
     @extend .margin-left-right-default
   }
   .item{
-    border $rem(1px) solid $grey-background-color
+    border $rem(2px) solid #eeeeee
     border-radius $border-radius-default
     padding $rem(10px)
     margin-bottom $rem(10px)
@@ -605,11 +611,14 @@ addBottomNavigator(){
   .item-footer{
     padding $rem(5px 0px)
     color $grey-color
-    setFontSize($font-size-18)
+    setFontSize($font-size-14)
     text-align right
     em{
       setFontSize($font-size-24)
       font-style normal
+    }
+    div{
+      white-space nowrap
     }
   }
   .footer .left{
@@ -1986,6 +1995,7 @@ radioInput()
       background-repeat no-repeat
       background-image url("../image/buycardspecial/special_03.jpg")
       background-position left center
+      background-size contain
     }
     .shape{
       width $rem(36px)
@@ -1994,6 +2004,7 @@ radioInput()
       background-color #e8e8e8
       display inline-block
       margin-right $rem(10px)
+      
     }
     
   }
@@ -2026,6 +2037,7 @@ radioInput()
       margin-right $rem(10px)
       background-repeat no-repeat
       background-position left top
+      background-size contain
     }  
     .expression{
       background-image url("../image/buycardspecial/special_07.jpg")
@@ -2058,10 +2070,14 @@ radioInput()
 .buy-card-edit{
   @extend .buy-card
   .number{
+    display flex
     label{
       display inline-block
       setFontSize(font-size-18)
     }
+  }
+  .lafe-intro-item .main .note{
+    margin $rem(5px 0px 8px 10px)
   }
   .input-item{
     .add-button,.delete-button{
@@ -2074,14 +2090,13 @@ radioInput()
       text-align center
     }
     input{
-      width $rem(94px)
+      width $rem(50px)
       height $rem(28px)
       line-height @height
       text-align center
       border none
       background-color $white-color
-      setFontSize(font-size-16)
-      text-indent $rem(20px)
+      setFontSize($font-size-14)
     }
   }
   .middle{
@@ -2089,5 +2104,69 @@ radioInput()
     justify-content center
     align-items center
     border-right $rem(1px) solid $white-color
+  }
+}
+
+.bill{
+  summarize()
+  .content{
+    padding $rem(28px)
+    .item{
+      border $rem(1px) solid $grey-background-color
+      border-radius $rem(10px)
+      padding $rem(10px)
+    }
+    .item-header{
+      color #2b2b2b
+      setFontSize($font-size-24)
+      border-bottom $rem(1px) solid $grey-background-color
+      padding-bottom $rem(5px)
+    }
+    .item-body{ 
+      padding $rem(10px 0 0)
+    }
+    .frame{
+      margin-top $rem(10px)
+      .sub-item{
+        label{
+          color #7f7f7f
+          setFontSize($font-size-20)
+        }
+        margin-right $rem(20px)
+      }
+    }
+    .start{
+      margin-top $rem(10px)
+      h2{
+        color #2b2b2b
+        setFontSize($font-size-24)
+      }
+    } 
+    .company-name{
+      margin-top $rem(10px)
+      width 100%
+      height $rem(48px)
+      line-height @height
+      text-indent $rem(20px)
+      setFontSize($font-size-20)
+      background-color #f5f5f5
+      border $rem(1px) solid #d2d2d2
+    }
+    .bill-detail{
+      margin-top $rem(10px)
+      color #2b2b2b
+      setFontSize($font-size-20)
+      margin-bottom $rem(3px)      
+    }
+  }
+  .footer .button{
+    display block
+    $background-gradient($light-yellow-color,$dark-yellow-color)
+    width 100%
+    height $rem(70px)
+    line-height @height
+    text-align center
+    color #fff
+    setFontSize($font-size-30)
   }
 }

@@ -10,7 +10,7 @@ var del = require('del');
 var connect = require('gulp-connect');
 var jade = require('gulp-jade');
 
-var paths = {
+var paths = { 
   build: './build/' + jsonObj.name + '/' + jsonObj.version
 }
 
@@ -28,7 +28,7 @@ gulp.task('jadeCompile',['stylCompile'],function(){
 });
 
 gulp.task('copy-image', function() {
-  gulp.src(['./app/**/*.jpg','./app/**/*.png'])
+  gulp.src(['./app/**/*.jpg','./app/**/*.png','./app/**/*.js','./app/**/*.woff','./app/**/*.ttf'])
     // .pipe(stylus())
     .pipe(gulp.dest(paths.build))
 });

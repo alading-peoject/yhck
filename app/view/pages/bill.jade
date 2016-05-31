@@ -1,0 +1,31 @@
+extends ../common/layout
+block content  
+  div(class="bill")
+    div(class="header")
+      h1 我的购物车
+      a(class="button" href="#") 编辑
+    div(class="content")
+      div(class="item")
+        div(class="item-header") 发票类型
+        div(class="item-body")
+          div(class="frame")
+            span(class="sub-item")
+              input(class="option-input radio" name="" type="radio")
+              label 普通发票
+            span(class="sub-item")
+              input(class="option-input radio" name="" type="radio")
+              label 增值发票
+          div(class="start")
+            h2 发票抬头
+            div(class="frame")
+              span(class="sub-item")
+                input(class="option-input radio" name="" type="radio")
+                label 个人
+              span(class="sub-item")
+                input(class="option-input radio" name="" type="radio")
+                label 单位
+            div
+              input(class="company-name" type="text" placeholder="青岛海尔有限公司")
+            div(class="bill-detail") 发票内容：明细
+    div(class="footer")
+      a(class="button" href="#") 确定
