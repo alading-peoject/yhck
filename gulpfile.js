@@ -20,10 +20,10 @@ gulp.task('clean',function(cb){
 
 var YOUR_LOCALS = {};
 gulp.task('jadeCompile',['stylCompile'],function(){
- 	gulp.src('./app/**/*.html')
-    // .pipe(jade({
-    //   locals: YOUR_LOCALS
-    // }))
+ 	gulp.src('./app/**/*.jade')
+    .pipe(jade({
+      locals: YOUR_LOCALS
+    }))
     .pipe(gulp.dest(paths.build))
 });
 

@@ -1,0 +1,74 @@
+extends ../common/layout
+block content
+  div(class="my-order")
+    div(class="header")
+      h1 我的订单
+    div(class="content")
+      ul(class="navigator")
+        li 
+          | 全部订单
+          br
+          | (20)
+        li 
+          | 待付款
+          br 
+          | (20)
+        li 
+          | 待收货
+          br 
+          | (20)
+        li 
+          | 已完成
+          br 
+          | (20)
+        li 
+          | 退换货
+          br 
+          | (20) 
+      div(class="list")
+        div(class="item")  
+          div(class="item-header")
+            span(class="left")
+              em(class="order-no") 退货订单:201677777777
+              strong(class="time") 退货时间:2016-06-01
+            span(class="right")
+              待确认
+          div(class="item-body lafe-intro-item")
+            div(class="main")
+              div(class="picture")
+                img(src="../../image/myfavorite/my-fav_01.png")
+              div(class="note")
+                h4 原瓶进口拉菲 花园干红葡萄酒6支装
+                div(class="cont")
+                  em ¥ 499.00
+                  strong 数量：6
+        div(class="item")
+          div(class="item-header")
+            span(class="left")
+              em(class="order-no") 退货订单:201677777777
+              strong(class="time") 退货时间:2016-06-01
+            span(class="right")
+              待确认
+          div(class="item-body lafe-intro-item")
+            div(class="main")
+              div(class="picture")
+                img(src="../../image/myfavorite/my-fav_01.png")
+              div(class="note")
+                h4 原瓶进口拉菲 花园干红葡萄酒6支装
+                div(class="cont")
+                  em ¥ 499.00
+                  strong 数量：6
+    div(class="footer")
+      ul(class="navigator")
+        li 
+          em
+          strong 主页
+        li 
+          em
+          strong 分类
+        li 
+          em
+          strong 购物车
+        li 
+          em
+          strong 个人中心

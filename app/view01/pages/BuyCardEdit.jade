@@ -1,0 +1,73 @@
+extends ../common/layout
+block content  
+  div(class="buy-card-edit")
+    div(class="header")
+      h1 我的购物车 
+      a(class="button" href="#") 编辑
+    div(class="content")
+      div(class="list")  
+        div(class="item")
+          div(class="item-head")
+            span(class="left") 
+              input(class="option-input radio" name="" type="radio")
+            div(class="main")
+              label lafite店铺   >
+              a(class="right" href="#") 编辑
+          div(class="lafe-intro-item")
+            div(class="left")
+              input(class="option-input radio" name="" type="radio")
+            div(class="main")
+              div(class="picture")
+                img(src="../../image/myfavorite/my-fav_01.png")
+              div(class="note")
+                h4 原瓶进口拉菲 花园干红葡萄酒6支装
+                div(class="cont")
+                  em ¥ 499.00
+                  span(class="number") 
+                    label 数量：
+                    span(class="input-item")
+                      small(class="add-button") - 
+                      input(value="6") 
+                      small(class="delete-button") +
+          div(class="item-footer")
+            div 
+              | 共计2件商品 小计：¥ 
+              em 499.00
+              |（含运费¥ 499.00）
+        div(class="item")
+          div(class="item-head")
+            span(class="left") 
+              input(class="option-input radio" name="" type="radio")
+            div(class="main")
+              label lafite店铺   >
+              a(class="right" href="#") 编辑
+          div(class="lafe-intro-item")
+            div(class="left")
+              input(class="option-input radio" name="" type="radio")
+            div(class="main")
+              div(class="picture")
+                img(src="../../image/myfavorite/my-fav_01.png")
+              div(class="note")
+                h4 原瓶进口拉菲 花园干红葡萄酒6支装
+                div(class="cont")
+                  em ¥ 499.00
+                  span(class="number") 
+                    label 数量：
+                    span(class="input-item")
+                      small(class="add-button") - 
+                      input(value="6") 
+                      small(class="delete-button") +
+          div(class="item-footer")
+            div 
+              | 共计2件商品 小计：¥ 
+              em 499.00
+              |（含运费¥ 499.00）
+    div(class="footer")
+      div(class="left")
+        input(class="option-input radio" name="" type="radio" value="0")
+        label 全选 
+      a(class="middle right" href="#")
+        strong 移至收藏
+      a(class="right" href="#")
+        strong 删除
+

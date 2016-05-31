@@ -1,19 +1,18 @@
 
-<!-- !!!!!!!!!!!!!此demo文件不可删!!!!!!!!!!!!!!！ -->
-
 <link rel="import" href="../common/common-head.html?__inline"><!-- 引入公共头部 -->
 
     <div class="sort">
-    	<div class="header">
-    		<div class="search-box">
-          <input class="search" type="text" placeholder="搜索"  />
-          <span class="icon"></span>
+
+    	<div class="logo-search-bar" style="position: relative;">
+        <div class="logo"><img src="../../image/index/logo.png"></div><div class="search">
+          <input type="text" placeholder="搜索">
         </div>
-    	</div>
+      </div>
+
     	<div class="content">
     		<div class="menu">
     			<ul>
-    				<li class="selected"><a href="#">葡萄酒</a></li>
+    				<li class="active"><a href="#">葡萄酒</a></li>
     				<li><a href="#">雪茄</a></li>
     				<li><a href="#">茶叶</a></li>
     				<li><a href="#">生鲜</a></li>
@@ -23,7 +22,7 @@
     			<div class="item">
     				<div class="title">
     					<em>按产地</em>
-    					<strong>排行榜</strong>
+    					<strong><img src="../../image/searchresult/rate.png">&nbsp;&nbsp;排行榜</strong>
     				</div>
     				<div class="cont">
     					<div class="row">
@@ -59,7 +58,7 @@
           <div class="item">
             <div class="title">
               <em>按种类</em>
-              <strong>排行榜</strong>
+              <strong><img src="../../image/searchresult/rate.png">&nbsp;&nbsp;排行榜</strong>
             </div>
             <div class="cont">
               <div class="row">
@@ -97,7 +96,7 @@
     </div>
   
   <!-- 引入js -->
-  <!-- js文件的命名一定要和页面的文字一样 -->
+
   <script type="text/javascript" src="../../script/page/demo.js"></script>
   <script>
       require('alading:app/script/page/demo');

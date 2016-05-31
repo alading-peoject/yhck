@@ -1,20 +1,19 @@
 
-<!-- !!!!!!!!!!!!!此demo文件不可删!!!!!!!!!!!!!!！ -->
-
 <link rel="import" href="../common/common-head.html?__inline"><!-- 引入公共头部 -->
 
     <div class="search-result">
-    	<div class="header">
-    		<div class="search-box">
-    			<input class="search" type="text" placeholder="搜索"  />
-    			<span class="icon"></span>
-    		</div>
-    	</div>
+    	
+    <div class="logo-search-bar" style="position: relative;">
+      <div class="logo"><img src="../../image/index/logo.png"></div><div class="search">
+        <input type="text" placeholder="搜索">
+      </div>
+    </div>
+
     	<div class="content">
     		<ul class="navigator">
-    			<li>综合</li>
-    			<li>销量</li>
-    			<li>价格</li>
+    			<li>综合<img class="hide" src="../../image/searchresult/arrow.png"></li>
+    			<li class="active">销量<img src="../../image/searchresult/arrow.png"></li>
+    			<li>价格<img src="../../image/searchresult/arrow-down.png"></li>
     		</ul>
     		<div class="cont">
     			
@@ -81,7 +80,7 @@
     </div>
   
   <!-- 引入js -->
-  <!-- js文件的命名一定要和页面的文字一样 -->
+
   <script type="text/javascript" src="../../script/page/demo.js"></script>
   <script>
       require('alading:app/script/page/demo');

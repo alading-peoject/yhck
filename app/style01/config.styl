@@ -1,0 +1,97 @@
+@import 'qst/all'
+
+//基础字号
+$base-text-font = $rem(20px);
+
+//深色背景上字体的颜色
+$dark-text-color = #ffb938;
+
+//浅色背景上字体颜色
+$under-text-color = #d89334;
+
+//通用字体颜色
+$common-text-color =#2b2b2b;
+
+//字体颜色---白色
+$whit-text-color = #fff;
+
+//内页分割线颜色
+$cut-line-color = #eee;
+
+//首页分割线颜色
+$home-line-color = #ededed;
+
+//渐变背景色
+.liner-background-color{
+  display inline-block
+  background -webkit-linear-gradient(0, #fdb752, #c77d20)
+  background linear-gradient(0, #fdb752, #c77d20)
+  color $whit-text-color
+  font-size $rem(30px)
+  height $rem(70px)
+  line-height @height
+}
+
+//购物车内页商品名字大小和颜色
+.buyCard-text-font{
+  font-size $rem(20px)
+  color $common-text-color
+}
+
+//除首页详情页外，价格字体大小和颜色
+.except-two-text-font{
+  font-size $rem(24px)
+  color $under-text-color
+}
+
+//数量字体大小和颜色
+.amount-text-font{
+  font-size $rem(20px)
+  color $common-text-color
+}
+
+//菜单主按钮
+.btn-style{
+  display inline-block
+  font-size $rem(20px)
+  color $common-text-color
+}
+
+//置顶
+.public-center-vertical{
+  position absolute
+  top 0
+  left @top
+}
+
+//置底
+.public-center-vertical{
+  position absolute
+  bottom 0
+  left @bottom
+}
+
+//垂直居中
+.public-center-vertical{
+  position absolute
+  top 50%
+  -webkit-transform translateY(-50%)
+  transform translateY(-50%)
+}
+
+//水平居中
+.public-center-horizontally{
+  position absolute
+  left 50%
+  -webkit-transform translateX(-50%)
+  transform translateX(-50%)
+}
+
+//水平垂直居中
+.public-center-completely{
+  position absolute
+  left 50%
+  top 50%
+  -webkit-transform translate(-50%, -50%)
+  transform translate(-50%, -50%)
+}
