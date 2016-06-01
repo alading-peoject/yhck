@@ -1,0 +1,48 @@
+extends ../common/layout
+block content
+  .my-order.my-order-01.center-index
+    .header
+      h1 个人中心
+    .banner
+      img(src='../../image/center/banner.png')
+    .person
+      img(src='../../image/center/person.png')
+      span 理想
+    .title
+      .left
+        img(src='../../image/center/document.png')
+        span 我的订单
+      a.all(href='javascript:;') 查看全部订单 >
+    hr
+    ul.navigator
+      li
+        | 待付款
+        br
+        | (20)
+      li
+        | 待收货
+        br
+        | (20)
+      li
+        | 已完成
+        br
+        | (20)
+      li
+        | 退换货
+        br
+        | (20)
+    .galery
+      a(href='javascript:;') 帮助中心
+      a(href='javascript:;') 我的收藏
+      a(href='javascript:;') 收货地址
+    hr.last
+  .total-nav
+    ul
+      li
+        a(href='javascript:;') 主页
+      li
+        a(href='javascript:;') 分类
+      li
+        a(href='javascript:;') 购物车
+      li.active
+        a(href='javascript:;') 个人中心

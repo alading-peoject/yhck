@@ -1,0 +1,94 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.center-index{
+  width 100%
+  height 100%
+  overflow-y scroll
+  .navigator li{
+    color #717171
+    padding 0 !important
+    margin $rem(15px 0)
+    &:last-child{
+      border 0
+    }
+  }
+  .navigator{
+    width 92%
+    margin 0 auto
+  }
+  .banner{
+    width 100%
+    img{
+      width 100%
+    }    
+  }
+  .person{
+    position absolute
+    top $rem(125px)
+    width 100%
+    span{
+      font-size $rem(36px)
+      color #e38f03
+      display block
+      text-align center
+      margin-top $rem(5px)
+    }
+    img{
+      width 25% !important
+      display block
+      margin 0 auto
+    }
+  }
+  .title{
+    margin $rem(30px) 4% $rem(10px)
+    display flex
+    flex-direction row
+    justify-content space-between
+    flex-wrap nowrap
+    img{
+      width $rem(40px)
+      height $rem(50px)
+    }
+    span{
+      display inline-block
+      margin-top $rem(10px)
+      color $common-text-color
+    }
+    a{
+      margin-top $rem(10px)
+    }
+  }
+  hr{
+    border-color #eee !important
+    &.last{
+      margin-bottom $rem(150px) !important
+    }
+  }
+  .galery{
+    display flex
+    flex-direction row
+    justify-content space-around
+    flex-wrap nowrap
+    margin-top $rem(20px)
+    a{
+      display block
+      height $rem(40px)
+      padding-top $rem(100px)
+      &:first-child{
+        background url('../image/center/lamp.png') no-repeat center $rem(20px)
+        background-size $rem(35px 60px)
+      }
+      &:nth-child(2){
+        background url('../image/center/star1.png') no-repeat center $rem(20px)
+        background-size $rem(54px 53px)
+      }
+      &:nth-child(3){
+        background url('../image/center/location.png') no-repeat center $rem(20px)
+        background-size $rem(37px 57px)
+      }
+    }
+  }
+}

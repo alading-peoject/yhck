@@ -22,7 +22,8 @@ var YOUR_LOCALS = {};
 gulp.task('jadeCompile',['stylCompile'],function(){
  	gulp.src('./app/**/*.jade')
     .pipe(jade({
-      locals: YOUR_LOCALS
+      locals: YOUR_LOCALS,
+      pretty: true
     }))
     .pipe(gulp.dest(paths.build))
 });

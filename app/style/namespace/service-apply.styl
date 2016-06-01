@@ -1,0 +1,82 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.service-apply{
+  font-size $rem(18px)
+  .amout{ 
+    color $common-text-color
+    margin-top $rem(15px)
+    select{
+      width 25%
+      text-align center
+    }
+  }
+  .cont{
+    em{
+      color $common-text-color !important
+      font-size $rem(18px) !important
+    }
+    margin $rem(15px 0)
+  }
+  .title{
+    color: #2b2b2b !important
+    font-size $rem(24px) !important
+  }
+  .check{
+    padding $rem(10px 30px)
+    label{
+      margin-right $rem(30px)
+    }
+    .text{
+      span{
+        color $common-text-color
+        display block
+        line-height $rem(50px)
+      }
+      textarea{
+        width 94%
+        border 0
+        outline none
+        background #f5f5f5
+        height $rem(100px)
+        padding $rem(10px) 3% 
+      }
+    }
+  }
+  .upload{
+    margin $rem(10px 30px)
+    width $rem(150px)
+    height @width
+    background #f5f5f5 url("../image/serviceapply/service-camera.png") no-repeat center $rem(25px)
+    background-size $rem(75px 65px)
+    input{
+      opacity: 0;
+      width $rem(100px)
+      height @width
+    }
+    span{
+      display block
+      text-align center
+      margin-top $rem(5px)
+      color $common-text-color
+    }
+  }
+  .info{
+    padding $rem(10px 30px)
+    color #868686
+  }
+  .address-info{
+    padding $rem(10px 30px)
+    color $common-text-color
+    line-height $rem(36px)
+  }
+  .service-submit{
+    setLinerBackgroundColor()
+    position absolute
+    width 100%
+    height $rem(60px)
+    text-align center
+  }
+}

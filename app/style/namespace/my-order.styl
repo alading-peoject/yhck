@@ -1,0 +1,65 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.my-order{
+  summarize()
+  addNavigator()
+  lafe-intro-item(100%)
+  .cont{
+    margin-top $rem(20px)
+    position relative
+    //setContentMargin()
+    strong{
+      position absolute
+      right 40%
+    }
+  }
+  .list{
+    margin-top $rem(20px)
+  }
+  .item{
+    padding-bottom $rem(12px)
+    border-bottom $rem(1px) solid #eee
+    margin-bottom $rem(20px)
+  }
+  .item-header{
+    display flex
+    justify-content space-between
+    padding $rem(5px 30px)
+    border-top $rem(1px) solid #eee
+    border-bottom $rem(1px) solid #eee
+    .left{
+      width 80%
+      line-height $rem(38px)
+    }
+    .right{
+      width 20%
+      display block
+      setFontSize($font-size-20)
+      font-weight normal
+    }
+    
+    .order-no,.time,right{
+      display block
+      setFontSize($font-size-20)
+      font-weight normal
+    }
+  }
+  .item-body{
+    margin-top 3%
+    //setContentMargin()
+      .main{
+        padding $rem(15px 20px)
+        margin $rem(0 20px)
+      }
+      .note{
+        margin-right 0 !important
+      }
+  }
+  .footer{
+    height $rem(88px)
+    addBottomNavigator()
+  }
+}

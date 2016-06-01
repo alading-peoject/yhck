@@ -1,0 +1,63 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.order-detail{
+  height 100%
+  overflow-y scroll
+  overflow-x hidden
+  .info{
+    color #7f7f7f 
+    padding $rem(20px) 4% 0
+    .title{
+      border-bottom $rem(1px) solid #e8e8e8
+      padding-bottom $rem(10px)
+      display flex
+      flex-direction row
+      justify-content space-between
+      flex-wrap nowrap
+      span{
+        &:first-child{
+          color $common-text-color
+          font-size $rem(24px)
+        }
+        &:last-child{
+          font-size $rem(18px)
+        }
+      }
+    }
+    .connect,.address{
+      font-size $common-text-color
+      border-bottom $rem(1px) solid #e8e8e8
+      padding-bottom $rem(10px)
+      margin $rem(10px 0)
+      line-height $rem(34px)
+    }
+    .address{
+      margin 0 !important
+    }
+  }
+  .total{
+    p{
+      display flex
+      flex-direction row
+      justify-content space-between
+      flex-wrap nowrap
+      img{
+        width $rem(31px)
+        height $rem(30px)
+        margin-right $rem(10px)
+      }
+      border 0 !important
+      span{
+        &:first-child{
+          font-size $rem(20px)
+        }
+        &:last-child{
+          font-size $rem(18px)
+        }
+      }
+    }
+  }
+}

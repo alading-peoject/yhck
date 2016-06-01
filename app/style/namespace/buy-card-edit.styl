@@ -1,0 +1,47 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent' 
+
+@import '../common/typography' 
+@import 'buy-card'
+
+.buy-card-edit{
+  @extend .buy-card
+  .number{
+    display flex
+    label{
+      display inline-block
+      setFontSize(font-size-18)
+    }
+  }
+  .lafe-intro-item .main .note{
+    margin $rem(5px 0px 8px 10px)
+  }
+  .input-item{
+    .add-button,.delete-button{
+      width $rem(28px)
+      height $rem(28px)
+      line-height @height
+      display inline-block
+      background-color #d6d6d6
+      color #000
+      text-align center
+    }
+    input{
+      width $rem(50px)
+      height $rem(28px)
+      line-height @height
+      text-align center
+      border none
+      background-color $white-color
+      setFontSize($font-size-14)
+    }
+  }
+  .middle{
+    display flex
+    justify-content center
+    align-items center
+    border-right $rem(1px) solid $white-color
+  }
+}

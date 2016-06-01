@@ -1,0 +1,19 @@
+extends ../common/layout
+block content
+  div(class="searching")
+    div(class="logo-search-bar")
+      div(class="logo")
+        img(src="../../image/index/logo.png")
+      div(class="search")
+        input(type="text" placeholder="搜索")
+    div(class="hot-search") 
+      | 热搜：
+      a(href="javascript:;") 拉菲
+      a(href="javascript:;") 张裕
+      a(href="javascript:;") 五粮液
+    div(class="record")
+      span(class="recente") 最近搜索记录
+      a(href="javascript:;") 送礼红酒
+      a(href="javascript:;") 最好的白酒
+      a(href="javascript:;") 拉菲庄园
+      a(href="javascript:;" class="delete") 清除搜索记录

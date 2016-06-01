@@ -1,0 +1,107 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+@import '../common/typography'
+
+.buy-card{   
+  lafe-intro-item(90%)
+  addFooter()
+  
+  .list{ 
+    margin-top $rem(30px)
+    setContentMargin()
+  }
+  .item{
+    border $rem(1px) solid $grey-background-color
+    border-radius $border-radius-default
+    padding $rem(10px)
+    margin-bottom $rem(10px)
+    .left{
+      background-color transparent
+      img{
+        width $rem(24px)
+        height $rem(23px)
+      }
+    }
+  }
+  .main{
+    flex 2
+    display flex
+    justify-content space-between
+  }
+  .item-head{
+    padding $rem(5px 0px 10px 0px)
+    border-bottom $rem(1px) solid $grey-background-color
+    display flex
+    justify-content space-between
+    margin-bottom $rem(10px)
+    .left{
+      width 10%
+      display flex
+      align-items center
+      justify-content center
+      //$text-gradient($light-yellow-color,$dark-yellow-color)
+    }
+    .left label{
+      vertical-align middle
+    }
+    .right{
+      text-decoration none
+      color $dark-yellow-color
+    }
+  }
+  .item-footer{
+    padding $rem(5px 0px)
+    color $grey-color
+    setFontSize($font-size-18)
+    text-align right
+    em{
+      setFontSize($font-size-24)
+      font-style normal
+    }
+  }
+  
+  .item-body{
+    position relative
+  }
+  .slide{
+    width $rem(150px)
+    height $rem(154px)
+    position absolute
+    right $rem(20px)
+    top 0
+    display flex
+    .collect,.delete{
+      flex 1
+      setFontSize($font-size-20)
+      display flex
+      align-items center
+      justify-content center
+      flex-direction column
+      color $white-color
+      writing-mode tb-rl
+    }
+    .collect{
+      background #c5c5c5
+    }
+    .delete{
+      background-color #ff3a52
+    }     
+  }
+  .footer .left{
+    em{
+      font-style normal
+      color $dark-yellow-color
+      setFontSize($font-size-18)
+      position relative
+      margin-top 2%
+    }
+    strong{
+      font-weight normal
+      color $dark-yellow-color
+      setFontSize($font-size-36)
+    }
+  }
+}

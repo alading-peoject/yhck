@@ -1,0 +1,32 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.news{
+  .content{
+    setContentMargin()
+  }
+  .title{
+    margin $rem(20px) 0
+    color $black-color
+    setFontSize($font-size-30)
+    font-weight bold !important
+  }
+  .create-time{
+    color $grey-color
+    setFontSize($font-size-18)
+    margin 0 0 $rem(15px) 0
+  }
+  .main{
+    img{
+      width 100%
+    }
+  }
+  .text{
+    margin $rem(20px)
+    color $grey-color
+    setFontSize($font-size-18)
+    line-height $rem(36px)
+  }
+}

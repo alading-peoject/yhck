@@ -1,0 +1,74 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.search-result{
+  .header{
+    position relative
+    left $rem(0px)
+    top $rem(0px)
+    addSearchBox()
+    .search-box{
+      position absolute
+      right $rem(10px)
+      top 50%
+      width 62.5%
+      margin-top $rem(-21px)
+    }
+  }
+  lafe-intro-item(100%)
+  addNavigator()
+  .cont{
+    margin-top $rem(20px)
+    setContentMargin()
+    .note{
+      margin $rem(20px 0 20px 20px) !important
+    }
+    .cont{
+      position relative
+      margin $rem(20px 0)
+      .strong{
+        position absolute
+        right $rem(10px)
+        top $rem(-5px)
+      }
+    }
+  }
+  .main{
+    padding $rem(0 20px) !important 
+    .picture{
+      img{
+        padding $rem(0 20px)
+      }
+    }
+  }
+  .content{
+    li{
+      padding $rem(20px 0)
+      text-align left !important
+      padding-left 15%
+      img{
+        position absolute
+        margin $rem(12px 15px)
+        width $rem(13px)
+        height $rem(10px)
+      }
+      &:first-child{
+        background url('../image/searchresult/diagramm.png') no-repeat 27% $rem(20px)
+        background-size $rem(31px 31px)
+      }
+      &:nth-child(2){
+        background url('../image/searchresult/rate.png') no-repeat 27% $rem(20px)
+        background-size $rem(27px 27px)
+      }
+      &:nth-child(3){
+        background url('../image/searchresult/sale.png') no-repeat 27% $rem(20px)
+        background-size $rem(31px 30px)
+      }
+    }
+    .active{
+      border-bottom $rem(4px) solid #e38f03
+    }
+  }
+}

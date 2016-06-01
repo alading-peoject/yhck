@@ -1,0 +1,42 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.searching{
+  font-size $rem(24px)
+  color #656462
+  a{
+    color #b5b5b5
+  }
+  .logo-search-bar{
+    position relative
+  }
+  .hot-search{
+    width 92%
+    padding $rem(20px) 4%
+    background #e7e7e7
+    border-bottom $rem(2px) solid #fff
+    display flex
+    flex-direction row
+    justify-content flex-start
+    flex-wrap wrap
+    a{
+      margin-right 2%
+      &:last-child{
+        margin 0
+      }
+    }
+  }
+  .record{
+    background #e7e7e7
+    a,span{
+      display block
+      padding $rem(20px) 4%
+      border-bottom $rem(2px) solid #eee
+    }
+    a:last-child{
+      text-align center
+    }
+  }
+}

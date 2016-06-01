@@ -1,0 +1,248 @@
+/*********根据业务抽象出来的可重用界面组件************/
+
+//用于实现头、尾、内容或头、内容形式的弹性布局
+summarize(length=90%){
+  lafe-intro-item(length)
+  display flex
+  flex-direction column
+  height 100%
+  .content{
+    flex 2
+    overflow-y auto
+  } 
+}
+setLinerBackgroundColor(){  
+  //渐变背景色
+  display inline-block
+  background -webkit-linear-gradient(0,#c77d20,#fdb752)
+  background linear-gradient(0, #c77d20,#fdb752)
+  color $whit-text-color
+  font-size $rem(30px)
+  height $rem(70px)
+  line-height @height
+}
+//水平垂直居中
+setPublicCenterCompletely(){
+  position absolute
+  left 50%
+  top 50%
+  -webkit-transform translate(-50%, -50%)
+  transform translate(-50%, -50%)
+}
+
+//用于设置字体大小
+setFontSize(size){
+  font-size size
+}
+
+addButton(){
+  padding $rem(10px) $rem(20px)
+  color $white-color
+  border-radius $border-radius-default
+  display inline-block
+  $background-gradient($light-yellow-color,$dark-yellow-color)
+}
+
+addBtnWidthRadius(){
+  padding $rem(5px) $rem(20px)
+  color $dark-yellow-color
+  border-radius $border-radius-big
+  display inline-block
+  border $rem(1px) solid $light-yellow-color
+  //$text-gradient($light-yellow-color,$dark-yellow-color)
+}
+
+//用于设置拉菲酒一项
+lafe-intro-item(isHaveSelect=100%){
+  .lafe-intro-item{
+    display flex
+    margin-bottom $rem(8px)
+    .left{
+      width 10%
+      background $grey-background-color
+      text-align center
+      line-height $rem(104px)
+      display flex
+      align-items center
+      justify-content center
+    }
+    
+    .main{
+      width isHaveSelect
+      display flex
+      background $grey-background-color
+      padding $rem(10px)
+      .picture{
+        width 24%
+        justify-content center
+        align-items center
+        display flex
+        img{
+          width 100%
+        }
+      }
+      .note{
+        width 76%
+        display flex
+        flex-direction column
+        justify-content space-between
+        margin $rem(10px 15px)
+      }
+      .note h4{
+        margin $rem(0)
+        color $black-color
+        setFontSize($font-size-20)
+        
+      }
+      .cont{
+        display flex
+        justify-content space-between
+        align-items center
+      }
+      .cont em{
+        color $dark-yellow-color
+        setFontSize($font-size-24)
+        font-style normal
+      }
+      .cont .strong{
+        addBtnWidthRadius()
+        setFontSize($font-size-24)
+        font-weight normal
+      }
+      .cont strong{
+        font-weight normal
+      }
+    }
+  }
+}
+
+setContentMargin(){
+  margin 0 $rem(28px)
+}
+//用于添加带按钮的页尾
+addFooter(){
+  .footer{
+    width 100%
+    height $rem(100px)
+    display flex
+    position absolute
+    left 0
+    bottom 0
+    z-index 999999
+    .left{
+      padding $rem(30px)
+      width 64%
+      display flex
+      align-items center
+      background $grey-background-color
+    }
+    .left label{
+      margin-left 20px
+      setFontSize($font-size-20)
+      color $grey-color
+    }
+    .right{
+      width 36%
+      border-right $rem(1px) solid #fad398
+      $background-gradient($light-yellow-color,$dark-yellow-color)
+      text-decoration none
+      color $white-color
+      setFontSize($font-size-30)
+      text-align center
+      justify-content center
+      align-items center
+      display flex
+      &:last-child{
+        border 0
+      }
+    }
+  }
+}
+
+//用于添加搜索框
+addSearchBox(){
+  .search-box{
+    height $rem(42px)
+    line-height $rem(42px)
+    input::-webkit-input-placeholder{
+      setFontSize($font-size-18)
+    }
+    .search{
+      width 100%
+      height 100%
+      line-height 100%
+      border none
+      border-radius $border-radius-big
+      setFontSize($font-size-24)
+      background-color #565656
+      text-indent $rem(26px)
+      padding 0
+      display block
+    }
+    .search-flag{
+
+    }
+  }
+}
+//用于添加导航
+addNavigator(){
+  .navigator{
+    display flex
+    border-bottom $rem(1px) solid $grey-background-color
+    li{
+      flex 1
+      text-align center
+      color #e38f03
+      //$text-gradient($light-yellow-color,$dark-yellow-color)
+      setFontSize($font-size-20)
+
+      padding $rem(15px 0px)
+      border-right $rem(1px) solid $grey-background-color
+    }
+    .active{
+      border-bottom $rem(4px) solid #e38f03
+    }
+  }
+}
+
+addBottomNavigator(){
+  .navigator{
+    display flex
+    border-top $rem(1px) solid $grey-background-color
+    width 100%
+    height 100%
+    li{
+      flex 1
+      text-align center
+      //$text-gradient($light-yellow-color,$dark-yellow-color)
+      setFontSize($font-size-20)
+      border-right $rem(1px) solid $grey-background-color
+      display flex
+      flex-direction column 
+      em,strong{
+        display block
+        align-items center
+        justify-content center
+        display flex 
+      }
+      em{
+        flex 2
+        color #f4ac3a
+        setFontSize($font-size-30)
+        align-items center
+      }
+      strong{
+        flex 1
+        color #6b6b6b
+        font-weight normal
+        align-items flex-start
+      }
+    }
+    .active{
+      background-color #f4ac3a
+      em,strong{
+        color $white-color
+      }
+    }
+  }
+}

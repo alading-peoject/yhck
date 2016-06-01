@@ -1,0 +1,116 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.detail{
+  width 100%
+  height @width
+  overflow-y scroll
+  addFooter()
+  .intro{
+    width 94%
+    padding 0 3%
+    .row{
+      width 100%
+      border-bottom $rem(1px) solid #eee
+      h1{
+        color #1c1c1c
+        font-size $rem(38px)
+      }
+      h3{
+        font-size $rem(18px)
+        color #ffb847
+        margin $rem(0 0 10px 0)
+      }
+      &:last-child{
+        color #c9c9c9
+        padding $rem(20px 0)
+      }
+      &:nth-child(2){
+        display flex
+        line-height $rem(70px)
+        .item{
+          width 50%
+          .property-quantity-control {
+            position: relative;
+            z-index: 1;
+            height: $rem(38px);
+            width: 57% !important
+            border: $rem(1px) solid #d6d6d6;
+            overflow: hidden;
+            float: left;
+            a {
+                position: absolute;
+                top:0;
+                width: $rem(39px);
+                height: $rem(40px);
+                line-height: $rem(36px);
+                font-size: $rem(26px);
+                text-decoration: none;
+                text-align: center;
+            }
+            input {
+                position: absolute;
+                top:0;
+                left: $rem(40px);
+                width: $rem(60px)
+                height: $rem(40px);
+                padding: 0;
+                line-height: $rem(40px);
+                font-size: $rem(18px);
+                border: none;
+                text-align: center;
+                color: #a0a0a0;
+            }
+
+            .vm-minus {
+                background #d6d6d6
+                left: 0;
+                border-right: $rem(1px) solid $border-color-base;
+            }
+
+            .vm-plus {
+                background #d6d6d6
+                right: 0;
+                border-left: $rem(1px) solid $border-color-base;
+            }
+        }
+          &:first-child{
+            font-size $rem(38px)
+            color #e38f03
+          }
+          &:last-child{
+            display flex
+            .items{
+              width 25%
+              &:first-child{
+                margin-left $rem(30px)
+              }
+              &:last-child{
+                margin $rem(15px 0 0 0)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .detail-img{
+    width 94%
+    padding 0 3%
+    .title{
+      line-height $rem(60px)
+      color #e38f03
+      font-size $rem(28px)
+    }
+    img{
+      width 100%
+      margin-bottom $rem(20px)
+      &:last-child{
+        margin-bottom $rem(120px)
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.my-favorite{
+  width 100%
+  height @width
+  overflow-y scroll
+  lafe-intro-item(90%)
+  .list{
+    margin-top $rem(30px)
+    setContentMargin()
+  }
+  addFooter()
+  .item:last-child{
+    margin-bottom $rem(120px)
+  }
+  .footer{
+    height $rem(88px)
+    addBottomNavigator()
+  }
+}

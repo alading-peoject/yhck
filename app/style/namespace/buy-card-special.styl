@@ -1,0 +1,116 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+@import '../common/typography'
+
+.buy-card-special{   
+  summarize()
+  .top{
+    height $rem(88px)
+    border-bottom $rem(1px) solid #dcdcdc
+    display flex
+    padding $rem(0 0 0 20px)
+    .left{
+      flex 2
+      display flex
+      justify-content space-between
+      align-items center
+    }
+    .right{
+      width $rem(88px)
+      height 100%
+      background-color #dcdcdc
+      color $white-color
+      display flex
+      justify-content center
+      align-items center
+      setFontSize($font-size-36)
+    }
+    .sub-left{
+      display flex
+      align-items center
+      setFontSize($font-size-36)
+    }
+    .sub-right{
+      width $rem(88px)
+      height @width
+      background-repeat no-repeat
+      background-image url("../image/buycardspecial/special_03.jpg")
+      background-position left center
+      background-size contain
+    }
+    .shape{
+      width $rem(44px)
+      height $rem(44px)
+      border-radius $rem(22px)
+      background-color #e8e8e8
+      display inline-block
+      margin-right $rem(10px)
+    }
+    
+  }
+  .content{
+    padding $rem(28px)
+    background-color #ebebeb
+  }
+  lafe-intro-item(100%)
+  .item{
+    border $rem(1px) solid #dedede
+    .send-button{
+      border-radius $rem(20px)
+      padding $rem(10px 20px)
+      $background-gradient($light-yellow-color,$dark-yellow-color)
+      color $white-color
+    }
+    margin-bottom $rem(10px)
+    border-radius $rem(5px)
+  }
+  .bottom{
+    background-color $white-color
+    border-top $rem(1px) solid #eee
+    height $rem(88px)
+    line-height @height
+    display flex
+    align-items center
+    .expression,.more{
+      display inline-block
+      margin-right $rem(10px)
+      background-repeat no-repeat
+      background-position left top
+      background-size contain
+    }  
+    .expression{
+      width $rem(50px)
+      height $rem(50px)
+      background-image url("../image/buycardspecial/special_07.jpg")
+      margin-left $rem(10px)
+    }
+    .more{
+      width $rem(46px)
+      height $rem(46px)
+      background-image url("../image/buycardspecial/special_09.jpg")
+    }
+    .enter-box{
+      flex 2
+      height $rem(42px)
+      line-height @height
+      border $rem(1px) solid $grey-background-color
+      border-radius $rem(5px)
+      margin-right $rem(20px)
+      text-indent $rem(10px)
+    }
+    .send{
+      display inline-block
+      width $rem(84px)
+      height $rem(42px)
+      line-height @height
+      color $white-color
+      text-align center
+      border-radius $rem(20px)
+      margin-right $rem(10px)
+      $background-gradient($light-yellow-color,$dark-yellow-color)
+    }
+  }
+}

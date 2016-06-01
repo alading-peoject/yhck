@@ -1,0 +1,45 @@
+@import '../qst/all'
+
+@import '../common/variable'
+@import '../common/commponent'
+
+.buy-result{  
+  .success{
+    margin-top $rem(105px)
+    text-align center
+  }
+  
+  .message{
+    margin-top $rem(30px)
+    text-align center
+    .info01{
+      color $black-color
+      setFontSize($font-size-34)
+    }
+    .info02{
+      color $grey-color
+      setFontSize($font-size-20)
+      margin-top $rem(20px)
+    }
+    strong{
+      setFontSize($font-size-24)
+    }
+  }
+  .button-frame{ 
+    margin-top $rem(40px)
+    a{ 
+      font-size $rem(32px)
+      width 25% !important
+      line-height 200% !important
+      display block
+    }
+    text-center center
+    .button{
+      addButton()
+      text-decoration none
+    }
+    .back{
+      margin-left $rem(30px)
+    }
+  }
+}
