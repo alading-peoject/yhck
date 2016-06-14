@@ -1,0 +1,51 @@
+@import "../common/commponent"
+
+html,body
+	height 100%
+	font-family:"宋体"
+.container
+	$setLayout()
+.header
+	height $rem(60px)
+	line-height @height
+	display flex
+	justify-content center
+	align-items center
+	background-color #181818
+	color #fff
+	.white-point
+		display inline-block
+		width $rem(30px)
+		height $rem(30px)
+		line-height @height
+		border-radius $rem(15px)
+		background-color #fff
+		vertical-align middle
+		margin-right $rem(10px)
+		.red-point
+			display inline-block
+			width $rem(24px)
+			height $rem(24px)
+			border-radius $rem(12px)
+			background-color #e83928
+			margin-top $rem(3px)
+.footer
+	display flex 
+	border-top $rem(1px) solid #5a3b3c
+	height $rem(190px)
+	a
+		flex 1
+		display flex
+		justify-content center
+		align-items center
+		$background-gradient(#261619,#37121a)
+		overflow hidden
+		&.selected
+			$background-gradient(#1d0d10,#270c13)
+		img
+			
+.jumbotron
+	display block
+	font-size $rem(0px) 
+	img
+		width 100%
