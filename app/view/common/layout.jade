@@ -9,9 +9,9 @@ html
 		meta(http-equiv="Cache-Control" content="no-cache")
 		meta(http-equiv="Pragma" content="no-cache")
 		block title 
-		link(href="../../style/iconfont/iconfont.css" rel="stylesheet")
-		link(href="../../style/main.css" rel="stylesheet")
+		link(href="../../css/iconfont/iconfont.css" rel="stylesheet")
 body 
-	div(class="wrap")
+	div(class="container")
+		include header
 		block content 
-	script(type="text/javascript" src="../../script/mod.js")
+		include footer

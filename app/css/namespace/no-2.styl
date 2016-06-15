@@ -1,0 +1,55 @@
+@import "../common/commponent"
+@import "../common/base"
+@import "../common/common"
+		
+.no-2
+	.list .title
+		border-top $rem(1px) solid #FFF
+		border-bottom $rem(1px) solid #FFF
+		padding $rem(0 24px)
+		background-color  #404040
+		color #fff
+		height $rem(58px)
+		line-height @height
+	&.content
+		background-color #181818 
+	.item 
+		display flex
+		margin-bottom $rem(62px)
+		padding $rem(30px 0)
+		.left
+			width 25%
+			text-align center
+			img
+				width 100%
+		.main
+			flex 2
+			display flex
+			border-bottom $rem(1px) solid #fff
+			color #fff
+			margin $rem(0px 10px)
+			.main-left
+				flex 2
+				h4
+					font-size $rem(28px)
+					color #e60012
+					margin-bottom $rem(16px)
+				.ftitle
+					font-size $rem(24px)
+					color #fff
+					margin-bottom $rem(20px)
+				.desc
+					font-size $rem(12px)
+					color #fff
+					margin-bottom $rem(20px)
+			.main-left
+				flex 2
+			.main-right
+				width 12%
+				display flex
+				align-items flex-end
+				img 
+					max-width 100%
+					margin-bottom $rem(20px)
+	
+	
