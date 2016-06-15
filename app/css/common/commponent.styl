@@ -11,7 +11,6 @@ $setLayout(){
   } 
 }
 
-//
 // 文字浮凸效果
 $embossed-text() {
   if arguments[1] {
@@ -22,7 +21,6 @@ $embossed-text() {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
 }
 
-//
 // 文字下陷效果
 $debossed-text() {
   if arguments[1] {
@@ -35,7 +33,6 @@ $debossed-text() {
   text-shadow: 0 1px 1px arguments[0], 0 0 0 #000, 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-//
 // 3D文本效果
 
 $stereo-text() {
@@ -90,6 +87,7 @@ $text-gradient(start-color,end-color,start-pos=0 0,end-pos=0 bottom){
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 //rem万金油
 $rem(){
   val = ''
